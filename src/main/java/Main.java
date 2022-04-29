@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello mates!");
+        int number = 38;
+        Factorial factorial = new Factorial();
+
+        System.out.printf("Factorial of %d is %d\n", number, factorial.factorial(number));
     }
 }
