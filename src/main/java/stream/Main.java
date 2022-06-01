@@ -5,16 +5,7 @@ import java.util.stream.Collectors;
 
 public class Main {
   public static void main(String[] args) {
-    User bob = new User("Bob", 23);
-    bob.setSubjects(List.of("Math", "Geography", "Geometry", "Psychical Education"));
-    User bruce = new User("Bruce", 25);
-    bruce.setSubjects(List.of("Math", "Geography", "Psychical Education"));
-    User alice = new User("Alice", 30);
-    alice.setSubjects(List.of("Geography", "Geometry", "Psychical Education"));
-    List<User> users = List.of(bob, bruce, alice);
-
-    List<String> subjects = getAllSubjects(users);
-    subjects.forEach(System.out::println);
+    System.out.println(new ParentServiceImpl().getFatherList());
   }
 
   private static List<String> getListUserAgeOlderThan(List<User> list, int age) {
