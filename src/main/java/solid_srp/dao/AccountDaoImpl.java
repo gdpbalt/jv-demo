@@ -2,7 +2,6 @@ package solid_srp.dao;
 
 import solid_srp.db.Storage;
 import solid_srp.model.Account;
-import java.util.List;
 
 public class AccountDaoImpl implements AccountDao {
   @Override
